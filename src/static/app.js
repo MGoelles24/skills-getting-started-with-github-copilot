@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 messageDiv.textContent = `Removed ${email} from ${activity}`;
                 messageDiv.className = "success";
                 messageDiv.classList.remove("hidden");
-                fetchActivities();
+activitySelect.innerHTML = '<option value="">-- Select an activity --</option>'; fetchActivities();
 
                 setTimeout(() => {
                   messageDiv.classList.add("hidden");
